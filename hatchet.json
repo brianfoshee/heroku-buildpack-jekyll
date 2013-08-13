@@ -19,7 +19,8 @@
   ],
   "rails3": [
     "sharpstone/rails3_mri_193",
-    "sharpstone/railties3_mri_193"
+    "sharpstone/railties3_mri_193",
+    "sharpstone/rails3_12factor"
   ],
   "rails4": [
     "sharpstone/rails4-manifest",
