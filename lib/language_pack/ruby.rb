@@ -699,7 +699,7 @@ params = CGI.parse(uri.query || "")
     end
   end
   
-  def generate_jekyll_site
+  def build_jekyll_site
     puts "Building jekyll site"
     run("env PATH=$PATH bundle exec jekyll")
   end
