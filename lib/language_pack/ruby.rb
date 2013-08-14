@@ -702,6 +702,9 @@ params = CGI.parse(uri.query || "")
   def build_jekyll_site
     puts "Building jekyll site"
     run("env PATH=$PATH bundle exec jekyll build")
+    unless $? == 0
+      error "Failed to generate site with jekyll."
+    end
   end
 
   def bundler_cache
